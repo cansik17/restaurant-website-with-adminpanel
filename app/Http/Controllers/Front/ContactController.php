@@ -29,6 +29,7 @@ class ContactController extends Controller
             'message'=>'required|min:10'
 
           ]);
+       
 
         //   if($validate->fails()){
         //     return redirect()->route('contact')->withErrors($validate)->withInput();
@@ -54,7 +55,7 @@ class ContactController extends Controller
           // $contact->message=$request->message;
           // $contact->save();
           //toastr()->success('Great!', 'Thank you! Your message has been successfully sent. ... ');
-          return redirect()->route('contact');
+          return redirect()->route('contact')->with('success', 'Mail send successfully!');
         }
 
 

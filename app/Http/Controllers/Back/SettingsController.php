@@ -44,6 +44,6 @@ class SettingsController extends Controller
     
         $settings->save();
        // toastr()->success( 'The operation completed successfully');
-        return redirect()->back();
+        return redirect()->back()->with('toast_success', 'The operation completed successfully!');
     }
 }

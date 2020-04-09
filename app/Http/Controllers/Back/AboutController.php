@@ -98,7 +98,7 @@ class AboutController extends Controller
         }
           $about->save();
          // toastr()->success( 'The operation completed successfully');
-          return redirect()->route('dashboard.about.index');
+          return redirect()->route('dashboard.about.index')->with('toast_success', 'The operation completed successfully!');
     }
 
     /**

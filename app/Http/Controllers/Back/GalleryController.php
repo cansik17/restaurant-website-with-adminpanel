@@ -61,7 +61,7 @@ class GalleryController extends Controller
           $gallery->save();
        
        // toastr()->success( 'The operation completed successfully');
-          return redirect()->route('dashboard.gallery.index');
+          return redirect()->route('dashboard.gallery.index')->with('toast_success', 'The operation completed successfully!');
     }
 
     
@@ -71,6 +71,6 @@ class GalleryController extends Controller
         $galleries->delete();
      
        // toastr()->success( 'The operation completed successfully');
-        return redirect()->route('dashboard.gallery.index');
+        return redirect()->route('dashboard.gallery.index')->with('toast_success', 'The operation completed successfully!');
     }
 }

@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en"><!-- Basic -->
 <head>
@@ -128,6 +131,6 @@
 	<script src="front/js/form-validator.min.js"></script>
     <script src="front/js/contact-form-script.js"></script>
 	<script src="front/js/custom.js"></script>
-
+	@include('sweetalert::alert')
 </body>
 </html>

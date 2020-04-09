@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from
@@ -142,6 +145,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="/back/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="/back/dist/js/adminlte.min.js"></script>
+@include('sweetalert::alert')
 </body>
     {{-- @jquery
     @toastr_js

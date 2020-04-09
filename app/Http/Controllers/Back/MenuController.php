@@ -70,7 +70,7 @@ class MenuController extends Controller
           $menu->save();
        
          //toastr()->success( 'The operation completed successfully');
-          return redirect()->route('dashboard.menu.index');
+          return redirect()->route('dashboard.menu.index')->with('toast_success', 'The operation completed successfully!');
     }
 
     /**
@@ -135,7 +135,7 @@ class MenuController extends Controller
           $menu->save();
        
          //toastr()->success( 'The operation completed successfully');
-          return redirect()->route('dashboard.menu.index');
+          return redirect()->route('dashboard.menu.index')->with('toast_success', 'The operation completed successfully!');
     }
 
     /**
@@ -150,6 +150,6 @@ class MenuController extends Controller
         $menus->delete();
      
         //toastr()->success( 'The operation completed successfully');
-        return redirect()->route('dashboard.menu.index');
+        return redirect()->route('dashboard.menu.index')->with('toast_success', 'The operation completed successfully!');
     }
 }

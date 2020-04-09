@@ -94,7 +94,7 @@ class SliderController extends Controller
         }
           $slider->save();
          // toastr()->success( 'The operation completed successfully');
-          return redirect()->route('dashboard.sliders.index');
+          return redirect()->route('dashboard.sliders.index')->with('toast_success', 'The operation completed successfully!');
     }
 
     /**
